@@ -96,21 +96,3 @@ body {
     font-size: 17px;
     margin-left: 8rem;
 }
-
-.btn button {
-    border: none;
-    outline: none;
-    height: 40px;
-    width: 100px;
-    background: #072e5f;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 8rem;
-}
-
-.btn button:hover {
-    cursor: pointer;
-    background-color: rgb(58, 81, 197);
-}
