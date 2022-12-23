@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User API</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <main class="flex"></main>
+
+    <template id="template-card">
+        <div class="container">
+            <img src="assets/images/user.jpg" alt="" class="imagen">
+            <div class="card">
+                <div class="input-text">
+                    <div class="icons">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <p class="nombre text">Angel</p>
+                </div>
+                <div class="input-text">
+                    <div class="icons">
+                        <i class="fa-solid fa-venus-mars"></i>
+                    </div>
+                    <p class="genero text">Masculino</p>
+                </div>
+                <div class="input-text">
+                    <div class="icons">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <p class="cumple text">25/10/2000</p>
+                </div>
+                <div class="input-text">
+                    <div class="icons">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p class="email text">angel@example.com</p>
+                </div>
+                <div class="input-text">
+                    <div class="icons">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p class="telefono text">3208945698</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+        <div class="select-gender">
+            <p>Seleccione una opción:</p>
+            <select name="genero" id="">
+                <option value="">Seleccione</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/e5b8fa4e0c.js" crossorigin="anonymous"></script>
+</body>
+</html>

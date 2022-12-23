@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+    #50d8ed, 
+    #6286f0, 
+    #8295f5, 
+    #83a2d8);
+    background-size: cover;
+    font-family: 'Montserrat', 'poppins', sans-serif;
+    height: 100vh;
+}
+
+.container{
+    width: 320px;
+    height: 510px;
+    background:  linear-gradient( 
+        #bfc7f4, 
+        #dde1f8,
+        #c8d4f3, 
+        #dddbf0) no-repeat;
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 150px 20px;
+    border-radius: 20px;
+    box-shadow: 5px 9px 16px -3px rgba(0, 0, 0, 0.27);
+}
+
+.container .imagen {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    left: calc(47% - 50px);
+}
+
+/*.container p.info {
+    margin: 0;
+    padding: 1px;
+    font-weight: bold;
+    display: block;
+}*/
+
+.container .card .input-text .icons{
+    display: inline-block;
+    background-color: white;
+    padding: 0.5rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+ 
+}
+
+.container p.text{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    outline: none;
+    height: 1.1rem;
+    width: 13.5rem;
+    color: black;
+    font-size: 15px;
+    /*border-radius: 50px;*/
+    text-align: center;
+    display: inline-block;
+    padding: 8px;
+    margin-left: -0.3rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container p.cumple{
+    font-size: 13px;
+}
+
+.container p.email{
+    font-size: 13px;
+}
+
+.select-gender p{
+    margin-top: 15rem;
+    margin-left: 8rem;
+}
+
+.select-gender select{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    outline: none;
+    height: 35px;
+    color: black;
+    font-size: 17px;
+    margin-left: 8rem;
+}
