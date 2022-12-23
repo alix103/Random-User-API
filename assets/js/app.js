@@ -1,16 +1,50 @@
 console.log("Random User API");
 
-document.addEventListener('DOMContentLoaded', () => {
-    fetchData();
-})
+const select = document.querySelector('.select-gender');
+const female = document.querySelector('.female');
+const male = document.querySelector('.male');
+
+
 
 //const getRandomInt = (min, max) => {
     //return Math.floor(Math.random()*(max - min)) + min;
 //}
+select.addEventListener('change',  (event)=> {
 
-const fetchData = async (genero) =>{
+    female.addEventListener('click', (event) => {
+        selectFemale();
+    })
+
+    male.addEventListener('click', (event) => {
+        selectMale();
+    })
+
+    if(event.target.value === 'female'){
+        selectFemale();
+    }else if(event.target.value === 'male'){
+        selectMale();
+    }
+})
+    
+
+const selectFemale = async () => {
+    const res = await fetch(`https://randomuser.me/api/?gender=female`)
+    const data = await res.json();
+    fetchData(data);
+}
+const selectMale = async () => {
+    const res = await fetch(`https://randomuser.me/api/?gender=male`)
+    const data = await res.json();
+    fetchData(data);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData();
+})
+
+const fetchData = async (id) =>{
     try {
-        const res = await fetch(`https://randomuser.me/api/?gender=${genero}`);
+        const res = await fetch(`https://randomuser.me/api/?gender=${id}`);
         const data = await res.json();
 
         console.log(data);
